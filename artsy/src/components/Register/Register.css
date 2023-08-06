@@ -1,0 +1,173 @@
+.main-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-register .leftside-register{
+   flex:0.33 ;
+   background:  #fe9955e1;
+}
+
+.main-register .leftside-register .register-header{
+    height:8rem ;
+}
+.main-register .leftside-register .register-header #logo-img{
+    margin-top: 1rem;
+    height: 90%;
+}
+
+.main-register .leftside-register .body{
+    margin-top: 2rem;
+    height:10rem;
+    background: white;
+}
+.main-register .leftside-register .body #body-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    
+}
+
+.main-register .leftside-register p{
+    padding: 1.8rem 0.8rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.main-register .rightside-register{
+    flex:0.67;
+    background: #ffffff98;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.main-register .rightside-register .top-right{
+    
+    float: right;
+    margin-right:1rem;
+    font-size: small;
+    font-weight: 200;
+}
+
+.main-register .rightside-register #link-signin{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fe9955e1;
+    font-size: 1rem;
+}
+
+.main-register .rightside-register #link-signin:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.main-register .rightside-register .body-right{
+    height: 100%;
+    width:100%;
+
+}
+
+
+.main-register .rightside-register .body-right .avatar{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    background: #fe9955e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem grey;
+}
+.main-register .rightside-register .body-right .avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.main-register .rightside-register .body-right .container-register{
+    height: 95%;
+    width: 60%;
+    margin: 2rem auto;
+    box-shadow:0rem 0rem 2rem 0.5rem #fe9955e1;
+    border-radius: 1rem;
+
+}
+.main-register .rightside-register .body-right .container-register .input-group{
+    width:70%;
+    position: relative;
+    
+}
+
+.main-register .rightside-register .body-right .container-register .input-group h5{
+    font-size: small;
+    font-weight: 200;
+    color: #fe9955e1;
+    position: absolute;
+    left: 7.5rem;
+    top: 0.5rem;
+    background: white;
+
+}
+.main-register .rightside-register .body-right .container-register .input-group input{
+    margin:1rem 5rem;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem grey;
+}
+.main-register .rightside-register .body-right .container-register .input-group input:focus{
+    outline: none;
+}
+.main-register .rightside-register .body-right .container-register #sbtn{
+    text-decoration: none;
+    width: 63%;
+    background: #fe9955e1;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 2.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.main-Register .right-side .body-right #sbtn:hover {
+
+    box-shadow: 0.5rem 0.5rem 1rem 0.1rem gray;
+  }
+  
+  @media screen and (max-width: 850px ){
+    .main-register .leftside-register{
+        display: none;
+     }
+
+
+    .main-register .rightside-register{
+        flex:1;
+    }
+
+    .main-register .rightside-register .body-right .container-register{
+        height: 90%;
+        width: 60%;
+
+    }
+    .main-register .rightside-register .body-right .container-register .input-group{
+        width:70%;
+    }
+    .main-register .rightside-register .body-right .container-register .input-group h5{
+        
+        left: 3.5rem;
+        top: 0.5rem;
+        
+    
+    }
+    .main-register .rightside-register .body-right .container-register .input-group input{
+        margin: 1rem 2rem;
+    }
+  }
